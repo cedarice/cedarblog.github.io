@@ -1,6 +1,6 @@
 {
-  "name": "cedarice.github.io",
-  "tagline": "Personal blog",
-  "body": "## cedardar.github.io\r\nThis is my personal blog involved my research. In this blog, I will share some code or experience about cancer genomics research.\r\n\r\n##The SCI-HUB domain now can access in.\r\nhttp://sci-hub.cc/\r\n\r\nhttp://sci-hub.bz/\r\n\r\nhttp://sci-hub.ac/\r\n\r\nhttps://github.com/cedarice/cedarice.github.io/blob/master/images/image.gif \r\n",
+  "name": "A Cancer Genomics Rookie",
+  "tagline": "Hello-World",
+  "body": "## cedardar.github.io\r\nThis is my personal blog involved my research. In this blog, I will share some code or experience about cancer genomics research.\r\n\r\n##The SCI-HUB domain now can access in.\r\nhttp://sci-hub.cc/\r\n\r\nhttp://sci-hub.bz/\r\n\r\nhttp://sci-hub.ac/\r\n\r\n##ubuntu 16.04安装有道词典\r\n重新安装ubuntu 16.04后，发现没法安装有道词典1.1.0版本了。利用sudo gdebi youdao-dict_1.1.0-0-ubuntu_amd64.deb\r\n提示gstreamer0.10-plugins-ugly错误，所以就想办法解决该问题。\r\n###首先新建几个文件夹：\r\n```\r\nmkdir extract\r\nmkdir extract/DEBIAN\r\nmkdir build\r\n```\r\n###然后解压deb包\r\n```\r\ndpkg -X youdao-dict_1.1.0-0-ubuntu_amd64.deb extract/\r\ndpkg -e youdao-dict_1.1.0-0-ubuntu_amd64.deb extract/DEBIAN/\r\n```\r\n###修改control文件，在extract/DEBIAN文件夹中\r\n将Depends部分中的gstreamer0.10-plugins-ugly更改为gstreamer1.0-plugins-ugly\r\n###重新打包为deb包\r\n```\r\ndpkg-deb -b extract/ build/\r\n```\r\n新生成的deb包在build文件夹中\r\n###安装即可\r\n```\r\nsudo gdebi youdao-dict_1.1.0-0~ubuntu_amd64.deb\r\n```\r\n\r\n初步使用没有发现大问题，取词正常。\r\n已打包的文件可以[直接下载](https://github.com/cedarice/cedarice.github.io/raw/0ff972fb82e6bd996becab7d356100361884a21d/youdao-dict_1.1.0-0%7Eubuntu_amd64.deb)\r\n\r\n参考资料：http://blog.csdn.net/yygydjkthh/article/details/36695243\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
