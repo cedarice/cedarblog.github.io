@@ -7,3 +7,5 @@ http://sci-hub.cc/
 http://sci-hub.bz/
 
 http://sci-hub.ac/
+
+https://github.com/cedarice/cedarice.github.io/blob/master/images/image.gif 
