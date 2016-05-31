@@ -36,3 +36,5 @@ sudo gdebi youdao-dict_1.1.0-0~ubuntu_amd64.deb
 
 初步使用没有发现大问题，取词正常。
 已打包的文件可以[直接下载](https://github.com/cedarice/cedarice.github.io/raw/0ff972fb82e6bd996becab7d356100361884a21d/youdao-dict_1.1.0-0%7Eubuntu_amd64.deb)
+
+参考资料：http://blog.csdn.net/yygydjkthh/article/details/36695243
